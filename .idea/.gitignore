@@ -1,0 +1,8 @@
+# Default ignored files
+/../../Weather-API /.idea/shelf/
+/../../Weather-API /.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../Weather-API /.idea/httpRequests/
+# Datasource local storage ignored files
+/../../Weather-API /.idea/dataSources/
+/../../Weather-API /.idea/dataSources.local.xml
