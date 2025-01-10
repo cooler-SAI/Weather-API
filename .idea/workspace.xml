@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="added config, misc updates">
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="restruct, delete useless code">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/api/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/api/weather.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/api/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/api/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/response.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/service/weather.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/weather.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +91,9 @@
     <MESSAGE value="conf base struct" />
     <MESSAGE value="more base files added" />
     <MESSAGE value="added config, misc updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="added config, misc updates" />
+    <MESSAGE value="added redis,response,weather" />
+    <MESSAGE value="restruct, delete useless code" />
+    <option name="LAST_COMMIT_MESSAGE" value="restruct, delete useless code" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

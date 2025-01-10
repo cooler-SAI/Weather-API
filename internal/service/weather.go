@@ -1,6 +1,6 @@
 package service
 
-import "Weather-API/internal/api"
+import "weather-api/internal/api"
 
 func GetWeatherData() api.WeatherResponse {
 	return api.WeatherResponse{
