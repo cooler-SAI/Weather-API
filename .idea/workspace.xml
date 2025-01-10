@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="conf base struct">
+      <change afterPath="$PROJECT_DIR$/internal/api/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/api/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/cache/redis.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/service/weather.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +80,10 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="conf base struct" />
+    <option name="LAST_COMMIT_MESSAGE" value="conf base struct" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
