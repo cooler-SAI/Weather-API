@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="restruct, delete useless code" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="more files updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +81,8 @@
     <MESSAGE value="added config, misc updates" />
     <MESSAGE value="added redis,response,weather" />
     <MESSAGE value="restruct, delete useless code" />
-    <option name="LAST_COMMIT_MESSAGE" value="restruct, delete useless code" />
+    <MESSAGE value="more files updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="more files updated" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
