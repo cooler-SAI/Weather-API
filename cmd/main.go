@@ -21,6 +21,10 @@ func main() {
 		Str("port", cfg.Port).
 		Msg("Starting server...")
 
+	log.Info().
+		Str("url", "http://localhost:"+cfg.Port).
+		Msg("Server URL")
+
 	http.HandleFunc("/", api.WeatherHandler)
 
 	go func() {
