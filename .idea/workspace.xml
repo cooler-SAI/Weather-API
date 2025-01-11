@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="misc updates for files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="more run updates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +109,8 @@
     <MESSAGE value="restruct, delete useless code" />
     <MESSAGE value="more files updated" />
     <MESSAGE value="misc updates for files" />
-    <option name="LAST_COMMIT_MESSAGE" value="misc updates for files" />
+    <MESSAGE value="more run updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="more run updates" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
