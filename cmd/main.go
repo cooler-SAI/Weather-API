@@ -1,19 +1,36 @@
 package main
 
 import (
-	"log"
 	"net/http"
+	"os"
+	"time"
 	"weather-api/internal/api"
 	"weather-api/internal/config"
+
+	"github.com/rs/zerolog"
+	"github.com/rs/zerolog/log"
 )
 
 func main() {
+
+	zerolog.TimeFieldFormat = time.RFC3339
+	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stdout, TimeFormat: time.RFC3339})
+
+	// log configs
 	cfg := config.Load()
 
+	// log server start
+	log.Info().
+		Str("port", cfg.Port).
+		Msg("Starting server...")
+
+	// added handler
 	http.HandleFunc("/", api.WeatherHandler)
 
-	log.Printf("Starting server on port %s...", cfg.Port)
+	// start server
 	if err := http.ListenAndServe(":"+cfg.Port, nil); err != nil {
-		log.Fatalf("Error starting server: %v", err)
+		log.Fatal().
+			Err(err).
+			Msg("Error starting server")
 	}
 }
