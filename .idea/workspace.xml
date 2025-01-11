@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="more files updated">
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="misc updates for files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/weather.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/weather.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,9 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build Weather-API main.go.executor": "Run",
+    "Go Build.go build weather-api.executor": "Run",
+    "Go Build.go build weather-api/cmd.executor": "Run",
     "Go Build.go_build_Weather-API main.go main.go.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -58,27 +60,34 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/Enterprise Development/Go-projects/Weather-API/cmd/main.go",
+    "last_opened_file_path": "D:/Enterprise Development/Go-projects/Weather-API/cmd",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="go_build_Weather-API main.go main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Weather-API" />
-      <working_directory value="$PROJECT_DIR$/cmd/" />
-      <go_parameters value="D:\Enterprise Development\Go-projects\Weather-API\cmd\" />
-      <kind value="FILE" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
       <package value="weather-api" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/../Weather-API|$PROJECT_DIR$/cmd/main.go|$PROJECT_DIR$/cmmain.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build weather-api/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Weather-API" />
+      <working_directory value="$PROJECT_DIR$/cmd" />
+      <kind value="DIRECTORY" />
+      <package value="weather-api" />
+      <directory value="$PROJECT_DIR$/cmd" />
+      <filePath value="$PROJECT_DIR$" />
       <output_directory value="$PROJECT_DIR$/cmd" />
-      <option name="run" value="false" />
-      <input_file value="$PROJECT_DIR$/../Weather-API|$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
   </component>
@@ -101,7 +110,8 @@
     <MESSAGE value="added redis,response,weather" />
     <MESSAGE value="restruct, delete useless code" />
     <MESSAGE value="more files updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="more files updated" />
+    <MESSAGE value="misc updates for files" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc updates for files" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
