@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="misc up">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="added link to get data">
       <change beforePath="$PROJECT_DIR$/internal/service/weather.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/weather.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +117,8 @@
     <MESSAGE value="set up tool, refactor code" />
     <MESSAGE value="added improved logs" />
     <MESSAGE value="misc up" />
-    <option name="LAST_COMMIT_MESSAGE" value="misc up" />
+    <MESSAGE value="added link to get data" />
+    <option name="LAST_COMMIT_MESSAGE" value="added link to get data" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

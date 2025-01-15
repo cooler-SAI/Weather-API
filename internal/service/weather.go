@@ -3,6 +3,7 @@ package service
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 )
 
@@ -24,13 +25,18 @@ const (
 )
 
 func GetWeatherData(city string) (WeatherResponse, error) {
-	url := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s",
+	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s",
 		city, apiKey)
 	resp, err := http.Get(url)
 	if err != nil {
 		return WeatherResponse{}, fmt.Errorf("failed to fetch weather data: %w", err)
 	}
-	defer resp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+
+		}
+	}(resp.Body)
 
 	if resp.StatusCode != http.StatusOK {
 		return WeatherResponse{}, fmt.Errorf("error: status code %d", resp.StatusCode)
