@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
 )
 
 type WeatherResponse struct {
@@ -20,12 +21,14 @@ type openWeatherMapResponse struct {
 	} `json:"main"`
 }
 
-const (
-	apiKey = "2bfcf1d1a1c828a2562683b20b52eaa7"
-)
-
 func GetWeatherData(city string) (WeatherResponse, error) {
-	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s", city, apiKey)
+	apiKey := os.Getenv("OPENWEATHER_API_KEY")
+	if apiKey == "" {
+		return WeatherResponse{}, fmt.Errorf("API key is missing")
+	}
+
+	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s",
+		city, apiKey)
 	resp, err := http.Get(url)
 	if err != nil {
 		return WeatherResponse{}, fmt.Errorf("failed to fetch weather data: %w", err)
