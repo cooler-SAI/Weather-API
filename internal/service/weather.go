@@ -25,21 +25,19 @@ const (
 )
 
 func GetWeatherData(city string) (WeatherResponse, error) {
-	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s",
-		city, apiKey)
+	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s", city, apiKey)
 	resp, err := http.Get(url)
 	if err != nil {
 		return WeatherResponse{}, fmt.Errorf("failed to fetch weather data: %w", err)
 	}
 	defer func(Body io.ReadCloser) {
-		err := Body.Close()
-		if err != nil {
-
+		if err := Body.Close(); err != nil {
+			fmt.Printf("failed to close response body: %v\n", err)
 		}
 	}(resp.Body)
 
 	if resp.StatusCode != http.StatusOK {
-		return WeatherResponse{}, fmt.Errorf("error: status code %d", resp.StatusCode)
+		return WeatherResponse{}, fmt.Errorf("error: received status code %d", resp.StatusCode)
 	}
 
 	var owmResp openWeatherMapResponse

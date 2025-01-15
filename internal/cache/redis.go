@@ -2,7 +2,8 @@ package cache
 
 import (
 	"context"
-	"github.com/redis/go-redis"
+
+	"github.com/redis/go-redis/v9"
 )
 
 var ctx = context.Background()
