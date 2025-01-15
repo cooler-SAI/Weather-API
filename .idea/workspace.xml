@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="update libs, set up redis use">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/weather.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/weather.go" afterDir="false" />
-    </list>
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="set up env conf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +119,9 @@
     <MESSAGE value="misc updates" />
     <MESSAGE value="set up get data online" />
     <MESSAGE value="update libs, set up redis use" />
-    <option name="LAST_COMMIT_MESSAGE" value="update libs, set up redis use" />
+    <MESSAGE value="added pai pass in diff file" />
+    <MESSAGE value="set up env conf" />
+    <option name="LAST_COMMIT_MESSAGE" value="set up env conf" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
