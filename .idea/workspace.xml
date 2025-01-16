@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="set up env conf" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="misc up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +68,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Enterprise Development\Go-projects\Weather-API\cmd" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Weather-API" />
@@ -114,14 +119,14 @@
     <MESSAGE value="added zerolog to the project" />
     <MESSAGE value="set up tool, refactor code" />
     <MESSAGE value="added improved logs" />
-    <MESSAGE value="misc up" />
     <MESSAGE value="added link to get data" />
     <MESSAGE value="misc updates" />
     <MESSAGE value="set up get data online" />
     <MESSAGE value="update libs, set up redis use" />
     <MESSAGE value="added pai pass in diff file" />
     <MESSAGE value="set up env conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up env conf" />
+    <MESSAGE value="misc up" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc up" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
