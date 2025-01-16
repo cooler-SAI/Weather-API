@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="misc up" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="added testify libs">
+      <change beforePath="$PROJECT_DIR$/internal/api/weather.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/weather_handler.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +128,8 @@
     <MESSAGE value="added pai pass in diff file" />
     <MESSAGE value="set up env conf" />
     <MESSAGE value="misc up" />
-    <option name="LAST_COMMIT_MESSAGE" value="misc up" />
+    <MESSAGE value="added testify libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added testify libs" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
