@@ -117,7 +117,7 @@ If the API key is missing or invalid:
 
 ## Future Improvements
 
-1. Integrate a persistent caching layer (e.g., Redis).
+1. ~~Integrate a persistent caching layer (e.g., Redis).~~
 2. Add support for more query parameters (e.g., units: metric/imperial).
 3. Implement rate limiting for API requests.
 4. Add Docker support for containerized deployment.

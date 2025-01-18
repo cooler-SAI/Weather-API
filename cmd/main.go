@@ -6,30 +6,23 @@ import (
 	"time"
 	"weather-api/internal/api"
 	"weather-api/internal/cache"
+	"weather-api/internal/config"
 
-	"github.com/joho/godotenv"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
 
 func main() {
+
 	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
 	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stdout, TimeFormat: time.RFC3339})
 
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Warn().Msg("No .env file found, using system environment variables")
-	}
+	cfg := config.Load()
 
-	cacheType := os.Getenv("CACHE_TYPE")
 	var cacheClient cache.Cache
-	if cacheType == "redis" {
-		redisAddr := os.Getenv("REDIS_ADDR")
-		if redisAddr == "" {
-			redisAddr = "localhost:6379"
-		}
-		cacheClient = cache.NewRedisCache(redisAddr)
-		log.Info().Msg("Using Redis cache")
+	if cfg.CacheType == "redis" {
+		cacheClient = cache.NewRedisCache(cfg.RedisAddr)
+		log.Info().Msgf("Using Redis cache at %s", cfg.RedisAddr)
 	} else {
 		cacheClient = cache.NewMockCache()
 		log.Info().Msg("Using Mock cache")
@@ -37,17 +30,11 @@ func main() {
 
 	api.InitCache(cacheClient)
 
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080"
-	}
+	log.Info().Msgf("Starting server... port=%s", cfg.Port)
+	log.Info().Msgf("Server URL: http://localhost:%s", cfg.Port)
 
-	http.HandleFunc("/", api.WeatherHandler)
-
-	log.Info().Msgf("Starting server... port=%s", port)
-	log.Info().Msgf("Server URL: http://localhost:%s", port)
-
-	if err := http.ListenAndServe(":"+port, nil); err != nil {
-		log.Fatal().Err(err).Msg("Failed to start server")
+	if err := http.ListenAndServe(":"+cfg.Port, nil); err != nil {
+		log.Fatal().Err(err).
+			Msg("Failed to start server")
 	}
 }
