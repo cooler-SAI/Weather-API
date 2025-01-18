@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="rename main files in folder">
-      <change afterPath="$PROJECT_DIR$/internal/api/test_weather_handler.go" afterDir="false" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="fix up knows">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,8 @@
     <MESSAGE value="misc up" />
     <MESSAGE value="added testify libs" />
     <MESSAGE value="rename main files in folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename main files in folder" />
+    <MESSAGE value="fix up knows" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix up knows" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
