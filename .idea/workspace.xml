@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="mix up">
-      <change afterPath="$PROJECT_DIR$/internal/api/weather_handler_test.go" afterDir="false" />
+    <list default="true" id="c1ba43ab-66d3-4d54-a27c-2d9ade585f88" name="Changes" comment="added tests">
+      <change afterPath="$PROJECT_DIR$/learn.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/api/test_weather_handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/api/weather_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/weather_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/weather_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/weather_handler_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,10 @@
     &quot;accountId&quot;: &quot;c3876b20-974c-49ac-b80a-eb4c45bd8776&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -73,7 +77,8 @@
     "last_opened_file_path": "D:/Enterprise Development/Go-projects/Weather-API/cmd",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,7 +86,7 @@
       <recent name="D:\Enterprise Development\Go-projects\Weather-API\cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.weather_handler_test.go">
+  <component name="RunManager" selected="Go Build.go build weather-api/cmd">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Weather-API" />
       <working_directory value="$PROJECT_DIR$" />
@@ -126,6 +131,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="HTML" />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -153,7 +161,8 @@
     <MESSAGE value="rename main files in folder" />
     <MESSAGE value="fix up knows" />
     <MESSAGE value="mix up" />
-    <option name="LAST_COMMIT_MESSAGE" value="mix up" />
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
