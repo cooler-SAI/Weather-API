@@ -5,6 +5,7 @@ import (
 	"os"
 	"time"
 	"weather-api/internal/api"
+	"weather-api/internal/cache"
 
 	"github.com/joho/godotenv"
 	"github.com/rs/zerolog"
@@ -19,6 +20,22 @@ func main() {
 	if err != nil {
 		log.Warn().Msg("No .env file found, using system environment variables")
 	}
+
+	cacheType := os.Getenv("CACHE_TYPE")
+	var cacheClient cache.Cache
+	if cacheType == "redis" {
+		redisAddr := os.Getenv("REDIS_ADDR")
+		if redisAddr == "" {
+			redisAddr = "localhost:6379"
+		}
+		cacheClient = cache.NewRedisCache(redisAddr)
+		log.Info().Msg("Using Redis cache")
+	} else {
+		cacheClient = cache.NewMockCache()
+		log.Info().Msg("Using Mock cache")
+	}
+
+	api.InitCache(cacheClient)
 
 	port := os.Getenv("PORT")
 	if port == "" {
